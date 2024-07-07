@@ -32,5 +32,17 @@ namespace Exeal.LeapYear.TDD.Tests
         {
             Assert.Throws<InvalidOperationException>(() => LeapYear.Create(year));
         }
+
+        [Theory]
+        [InlineData(1996)]
+        [InlineData(1992)]
+        [InlineData(1988)]
+        [InlineData(1984)]
+        public void ReturnALeapYearIfIsDivisibleBy4ButNotBy100(int year)
+        {
+            var result = LeapYear.Create(year);
+            Assert.Equal(year, result.Value);
+        }
+
     }
 }
