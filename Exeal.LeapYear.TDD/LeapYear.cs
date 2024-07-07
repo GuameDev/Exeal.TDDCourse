@@ -7,7 +7,7 @@ namespace Exeal.LeapYear.TDD
 
         public static LeapYear Create(int year)
         {
-            return new LeapYear() { Value = 2024 };
+            return new LeapYear() { Value = year };
         }
     }
 }
