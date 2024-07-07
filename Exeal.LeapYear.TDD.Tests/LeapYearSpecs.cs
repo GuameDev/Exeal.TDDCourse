@@ -2,17 +2,25 @@ namespace Exeal.LeapYear.TDD.Tests
 {
     public class LeapYearSpecs
     {
-        [Fact]
-        public void ReturnALeapYearIfIsDivisibleBy400()
+        [Theory]
+        [InlineData(2024)]
+        [InlineData(2020)]
+        [InlineData(2016)]
+        [InlineData(2012)]
+        public void ReturnALeapYearIfIsDivisibleBy400(int year)
         {
-            var result = LeapYear.Create(2024);
-            Assert.Equal(2024, result.Value);
+            var result = LeapYear.Create(year);
+            Assert.Equal(year, result.Value);
         }
 
-        [Fact]
-        public void ReturnALeapYearIfIsDivisibleBy100ButNotBy400()
+        [Theory]
+        [InlineData(1900)]
+        [InlineData(1700)]
+        [InlineData(1500)]
+        [InlineData(1300)]
+        public void ThrowInvalidOperationExceptionIfIsDivisibleBy100ButNotBy400(int year)
         {
-            Assert.Throws<InvalidOperationException>(() => LeapYear.Create(1900));
+            Assert.Throws<InvalidOperationException>(() => LeapYear.Create(year));
         }
     }
 }
