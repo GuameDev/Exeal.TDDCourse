@@ -12,8 +12,7 @@ namespace Exeal.LeapYear.TDD.Tests
         [Fact]
         public void ReturnALeapYearIfIsDivisibleBy100ButNotBy400()
         {
-            var result = LeapYear.Create(1900);
-            Assert.Equal(2024, result.Value);
+            Assert.Throws<InvalidOperationException>(() => LeapYear.Create(1900));
         }
     }
 }
