@@ -5,15 +5,21 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Greeting", "Greeting", "{FDE97722-091C-4CF7-A3B6-D2A51A1684C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exeal.GreetingKata.TDD", "Exeal.GreetingKata.TDD\Exeal.GreetingKata.TDD.csproj", "{3B530BA1-84D9-4B35-9298-10B31328B4E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exeal.GreetingKata.TDD", "Exeal.GreetingKata.TDD\Exeal.GreetingKata.TDD.csproj", "{3B530BA1-84D9-4B35-9298-10B31328B4E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exeal.GreetingKata.TDD.Tests", "Exeal.GreetingKata.TDD.Tests\Exeal.GreetingKata.TDD.Tests.csproj", "{D01461AD-E0F4-4D05-B4C3-BFAE9404819F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exeal.GreetingKata.TDD.Tests", "Exeal.GreetingKata.TDD.Tests\Exeal.GreetingKata.TDD.Tests.csproj", "{D01461AD-E0F4-4D05-B4C3-BFAE9404819F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FizzBuzz", "FizzBuzz", "{4E563E17-0B49-47B7-BB2B-D0F589D9D57F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exeal.FizzBuzz.TDD", "Exeal.FizzBuzz.TDD\Exeal.FizzBuzz.TDD.csproj", "{F363D3EE-2E29-457F-A411-39F30A1D778A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exeal.FizzBuzz.TDD", "Exeal.FizzBuzz.TDD\Exeal.FizzBuzz.TDD.csproj", "{F363D3EE-2E29-457F-A411-39F30A1D778A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exeal.FizzBuzz.TDD.Tests", "Exeal.FizzBuzz.TDD.Tests\Exeal.FizzBuzz.TDD.Tests.csproj", "{7A6ED75F-0FFA-4429-9BF9-725AEF53A699}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exeal.FizzBuzz.TDD.Tests", "Exeal.FizzBuzz.TDD.Tests\Exeal.FizzBuzz.TDD.Tests.csproj", "{7A6ED75F-0FFA-4429-9BF9-725AEF53A699}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeapYear", "LeapYear", "{2072368E-FA4E-4A76-8530-96797278D85B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exeal.LeapYear.TDD", "Exeal.LeapYear.TDD\Exeal.LeapYear.TDD.csproj", "{43349DFB-3AC5-4B4E-9609-FF86A97AEC2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exeal.LeapYear.TDD.Tests", "Exeal.LeapYear.TDD.Tests\Exeal.LeapYear.TDD.Tests.csproj", "{7E2F1211-CEFE-4737-B0D6-5B56A8AC5E79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +43,14 @@ Global
 		{7A6ED75F-0FFA-4429-9BF9-725AEF53A699}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A6ED75F-0FFA-4429-9BF9-725AEF53A699}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A6ED75F-0FFA-4429-9BF9-725AEF53A699}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43349DFB-3AC5-4B4E-9609-FF86A97AEC2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43349DFB-3AC5-4B4E-9609-FF86A97AEC2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43349DFB-3AC5-4B4E-9609-FF86A97AEC2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43349DFB-3AC5-4B4E-9609-FF86A97AEC2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E2F1211-CEFE-4737-B0D6-5B56A8AC5E79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E2F1211-CEFE-4737-B0D6-5B56A8AC5E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E2F1211-CEFE-4737-B0D6-5B56A8AC5E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E2F1211-CEFE-4737-B0D6-5B56A8AC5E79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +60,8 @@ Global
 		{D01461AD-E0F4-4D05-B4C3-BFAE9404819F} = {FDE97722-091C-4CF7-A3B6-D2A51A1684C8}
 		{F363D3EE-2E29-457F-A411-39F30A1D778A} = {4E563E17-0B49-47B7-BB2B-D0F589D9D57F}
 		{7A6ED75F-0FFA-4429-9BF9-725AEF53A699} = {4E563E17-0B49-47B7-BB2B-D0F589D9D57F}
+		{43349DFB-3AC5-4B4E-9609-FF86A97AEC2A} = {2072368E-FA4E-4A76-8530-96797278D85B}
+		{7E2F1211-CEFE-4737-B0D6-5B56A8AC5E79} = {2072368E-FA4E-4A76-8530-96797278D85B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6F063019-4B32-4046-96B9-758D63F45BC7}
