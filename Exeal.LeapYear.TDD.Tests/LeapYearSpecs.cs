@@ -22,5 +22,15 @@ namespace Exeal.LeapYear.TDD.Tests
         {
             Assert.Throws<InvalidOperationException>(() => LeapYear.Create(year));
         }
+
+        [Theory]
+        [InlineData(3)]
+        [InlineData(555)]
+        [InlineData(1423)]
+        [InlineData(1789)]
+        public void ThrowInvalidOperationExceptionIfIsNotDivisibleBy4(int year)
+        {
+            Assert.Throws<InvalidOperationException>(() => LeapYear.Create(year));
+        }
     }
 }
