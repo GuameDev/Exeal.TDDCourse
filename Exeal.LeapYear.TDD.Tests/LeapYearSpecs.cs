@@ -43,6 +43,5 @@ namespace Exeal.LeapYear.TDD.Tests
             var result = LeapYear.Create(year);
             Assert.Equal(year, result.Value);
         }
-
     }
 }

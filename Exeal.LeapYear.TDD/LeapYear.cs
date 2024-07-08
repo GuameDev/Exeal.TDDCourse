@@ -1,16 +1,20 @@
-﻿
-namespace Exeal.LeapYear.TDD
+﻿namespace Exeal.LeapYear.TDD
 {
     public class LeapYear
     {
-        public int Value { get; set; }
+        public int Value { get; }
+
+        private LeapYear(int year)
+        {
+            Value = year;
+        }
 
         public static LeapYear Create(int year)
         {
             if (!IsValidLeapYear(year))
-                throw new InvalidOperationException();
+                throw new InvalidOperationException($"{year} is not a valid leap year.");
 
-            return new LeapYear() { Value = year };
+            return new LeapYear(year);
         }
 
         private static bool IsValidLeapYear(int year)
