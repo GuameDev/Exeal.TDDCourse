@@ -43,5 +43,15 @@ namespace Exeal.LeapYear.TDD.Tests
             var result = LeapYear.Create(year);
             Assert.Equal(year, result.Value);
         }
+
+        [Theory]
+        [InlineData(-1)]
+        [InlineData(-1000)]
+        [InlineData(-1996)]
+        [InlineData(-2000)]
+        public void ThrowInvalidOperationExceptionIfIsNegative(int year)
+        {
+            Assert.Throws<InvalidOperationException>(() => LeapYear.Create(year));
+        }
     }
 }
