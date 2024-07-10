@@ -5,7 +5,8 @@ namespace Exeal.StringCalculator.TDD
     {
         public static int Add(string numbers)
         {
-            return numbers.Split(',').Select(x => Convert.ToInt32(x)).Sum(x => x);
+            char[] separators = [',', '\n'];
+            return numbers.Split(separators).Select(x => Convert.ToInt32(x)).Sum(x => x);
         }
     }
 }
