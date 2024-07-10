@@ -5,8 +5,15 @@ namespace Exeal.StringCalculator.TDD
     {
         public static int Add(string numbers)
         {
-            char[] separators = [',', '\n'];
-            return numbers.Split(separators).Select(x => Convert.ToInt32(x)).Sum(x => x);
+            ICollection<char> separators = [',', '\n'];
+
+            if (!numbers.StartsWith("//"))
+                return numbers.Split(separators.ToArray()).Select(x => Convert.ToInt32(x)).Sum(x => x);
+
+
+            separators.Add(numbers[2]);
+            return numbers.Substring(3).Split(separators.ToArray(), StringSplitOptions.RemoveEmptyEntries).Select(x => Convert.ToInt32(x)).Sum(x => x);
+
         }
     }
 }

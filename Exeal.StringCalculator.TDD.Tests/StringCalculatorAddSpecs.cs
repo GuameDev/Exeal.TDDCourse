@@ -27,5 +27,15 @@ namespace Exeal.StringCalculator.TDD.Tests
             Assert.Equal(expectedResult, result);
         }
 
+
+        [Theory]
+        [InlineData("//;\n3,5", 8)]
+
+        public void Add_GivenDynamicSeparatorReturnSum(string numbers, int expectedResult)
+        {
+            var result = StringCalculator.Add(numbers);
+            Assert.Equal(expectedResult, result);
+        }
+
     }
 }
